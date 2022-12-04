@@ -3,15 +3,28 @@
 This is the journey, of how one man, one stellar man, took the trek that others were unwilling to go. To complete all 25 days of the advent of code 2022. 
 
 ---
-Code commands
+To Run Thine Code
 
 ---
 
 ```
-g++ -o test.exe ./test.cpp
+g++ -o Day1.exe ./Day01/AdventDay1.cpp
 
-./test.exe
+./Day1.exe
 ```
+--- 
+Git Commands
+
+---
+```
+git add . 
+git commit -m "Message"
+git push 
+git pull
+```
+
+
+
 ---
 Code Formatting 
 
