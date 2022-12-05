@@ -7,6 +7,8 @@
 
 using namespace std; 
 
+// In prog
+
 int pointCalc(string yourMove, string opponentMove){
     int pointsAdded = 0;
 
