@@ -14,6 +14,7 @@ int main(){
     char input; 
 
     vector<vector<char>> mainVector; 
+    vector<vector<char>> copyVector; 
     vector<char> tempVector = {};
 
     int countChars = 0; 
@@ -65,6 +66,8 @@ int main(){
 
     int countOps = 0; 
 
+    copyVector = mainVector; 
+
     while(getline(newFile,newLine)){
 
         index = newLine.find(" "); 
@@ -98,9 +101,18 @@ int main(){
 
 
         for(int i = 0; i < num1; i++){
-            mainVector[num3].push_back(mainVector[num2][0]);
+            mainVector[num3].insert(mainVector[num3].begin(),mainVector[num2][0]);
             mainVector[num2].erase(mainVector[num2].begin());
         }
+
+        int tempTracker = num1 - 1; 
+        for(int i = 0; i < num1; i++){
+
+            copyVector[num3].insert(copyVector[num3].begin(),copyVector[num2][tempTracker]);
+            copyVector[num2].erase(copyVector[num2].begin() + tempTracker);
+            tempTracker--; 
+        }
+
         countOps++; 
     
 
@@ -111,6 +123,16 @@ int main(){
     for(int i = 0; i < mainVector.size(); i++){
         for(int j = 0; j < mainVector[i].size(); j++){
             cout << mainVector[i][j];
+        }
+        cout << endl; 
+
+    }
+    cout << endl; 
+
+
+    for(int i = 0; i < copyVector.size(); i++){
+        for(int j = 0; j < copyVector[i].size(); j++){
+            cout << copyVector[i][j];
         }
         cout << endl; 
 
