@@ -7,6 +7,8 @@
 
 using namespace std; 
 
+// hi :)
+
 bool testChars(vector<char> vec, int position){
     bool flag = true;
     int numChars = 14; 

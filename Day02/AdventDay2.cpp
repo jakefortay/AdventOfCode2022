@@ -53,6 +53,7 @@ int pointCalc(string yourMove, string opponentMove){
 
 int advancedPointCalc(string token, string oppMove){
     int pointsAdded = 0; 
+    
     // X = Need to lose, Y = Need to draw, Z = Need to win  
 
     if(token == "X"){
@@ -94,8 +95,7 @@ int main()
 
     string input,oppMove;
     vector<string> moves; 
-    int totalPoints1, totalPoints2;
-
+    int totalPoints1(0), totalPoints2(0);
 
     while(newFile >> input){
         moves.push_back(input);
