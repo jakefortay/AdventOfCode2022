@@ -7,7 +7,7 @@
 
 using namespace std; 
 
-// hi :()
+// hi |:()
 
 bool testChars(vector<char> vec, int position){
     bool flag = true;
