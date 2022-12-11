@@ -182,6 +182,8 @@ int main(){
 
     cout << "Max scenic score is " << tempMax << endl; 
 
+    // Done 
+
     return 0;
 
 }
