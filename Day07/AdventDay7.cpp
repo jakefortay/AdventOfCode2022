@@ -9,14 +9,13 @@ using namespace std;
 
 const int MAX_SIZE = 100000;
 
+// UNFINISHED
+
 int getSize(vector<string> list, vector<string> directories, vector<int> positions){
 
     for(int i = 0; i < positions.size(); i++){
 
     }
-
-
-
 
     return 0; 
 }
